@@ -4,20 +4,6 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas = [
-    {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia"
-        alternativas: [
-            {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
-            },
-            {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
-            }
-        ]
-},
 
 
 const perguntas = [
@@ -78,13 +64,5 @@ function mostraAlternativas(){
             caixaAlternativas.appendChild(botaoAlternativas);
     }
 
-
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-      const botaoAlternativas = document.createElement("button");
-      botaoAlternativas.textContent = alternativa;
-      caixaAlternativas.appendChild(botaoAlternativas);
-    }
-  }
   
   mostraPergunta();  
